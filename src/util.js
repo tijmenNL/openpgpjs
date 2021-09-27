@@ -381,7 +381,7 @@ const util = {
    */
   detectNode: function() {
     return typeof globalThis.process === 'object' &&
-      typeof globalThis.process.versions === 'object';
+      typeof globalThis.process.versions === 'object' && globalThis.process.versions.electron === '';
   },
 
   /**
